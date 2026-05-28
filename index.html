@@ -41,7 +41,6 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-overlay"></div>
     <div class="hero-content reveal">
       <div class="hero-badge">
@@ -59,12 +58,12 @@
           <div class="label">Seasons</div>
         </div>
         <div class="hero-stat">
-          <div class="number">7</div>
-          <div class="label">Members</div>
+          <div class="number">6</div>
+          <div class="label">Students</div>
         </div>
         <div class="hero-stat">
-          <div class="number">#9</div>
-          <div class="label">in Israel</div>
+          <div class="number">1</div>
+          <div class="label">Mentor</div>
         </div>
       </div>
       
@@ -121,8 +120,8 @@
           </div>
           <div class="highlight-card stagger-4">
             <i class="fas fa-globe icon" style="color: var(--green-light)"></i>
-            <h4>Global</h4>
-            <p>Ranked #802 worldwide in OPR out of thousands of teams.</p>
+            <h4>Representation</h4>
+            <p>Representing Meir Shfeya and Israel through robotics, teamwork, and STEM outreach.</p>
           </div>
         </div>
       </div>
@@ -257,7 +256,7 @@
           <i class="fas fa-flag achievement-icon" style="color: #2196F3"></i>
           <h3>9th Place in Israel</h3>
           <div class="season-tag">2024 - 2025</div>
-          <p>Ranked among the top 10 best FTC robotics teams in the entire country.</p>
+          <p>Ranked among the top 10 FTC teams in Israel during the 2024-2025 season.</p>
         </div>
       </div>
     </div>
@@ -267,9 +266,9 @@
   <section id="stats" class="stats">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">By The Numbers</span>
-        <h2>Performance Metrics</h2>
-        <p>Data imported directly from FTCScout for the 2024-2025 season.</p>
+        <span class="section-label">2024 - 2025 Snapshot</span>
+        <h2>Season Performance Metrics</h2>
+        <p>Season-specific data imported from FTCScout for Into The Deep.</p>
       </div>
 
       <div class="stats-grid reveal">
@@ -303,11 +302,21 @@
       <div class="section-header reveal">
         <span class="section-label">The People</span>
         <h2>Meet The Team</h2>
-        <p>The dedicated students who make the magic happen.</p>
+        <p>The students building PlanTech, with guidance from our mentor.</p>
       </div>
 
-      <div class="team-grid" id="team-container">
-        <!-- Team members injected via JS to keep HTML clean -->
+      <div class="team-group">
+        <h3 class="team-group-title reveal">Students</h3>
+        <div class="team-grid" id="team-container">
+          <!-- Student members injected via JS to keep HTML clean -->
+        </div>
+      </div>
+
+      <div class="team-group mentor-group">
+        <h3 class="team-group-title reveal">Mentor</h3>
+        <div class="mentor-grid" id="mentor-container">
+          <!-- Mentor injected via JS to keep HTML clean -->
+        </div>
       </div>
     </div>
   </section>
@@ -339,23 +348,19 @@
         </div>
         
         <div class="footer-col">
-          <h4>Location</h4>
-          <p style="color: var(--text-light-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">
-            Meir Shfeya Youth Village<br>
-            Zichron Yaacov Area<br>
-            Israel
+          <h4>Contact Us</h4>
+          <p class="footer-contact-text">
+            <a href="mailto:ftc17106@gmail.com">ftc17106@gmail.com</a>
           </p>
-          <div class="social-links" style="margin-top: 1rem;">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <div class="social-links">
+            <a href="https://www.instagram.com/plantech_17106/" target="_blank" rel="noopener" aria-label="PlanTech Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
       
       <div class="footer-bottom">
         <p>&copy; 2026 PlanTech #17106. All rights reserved.</p>
-        <p>Built with ❤️ by Team PlanTech</p>
+        <p>Built by Team PlanTech</p>
       </div>
     </div>
   </footer>

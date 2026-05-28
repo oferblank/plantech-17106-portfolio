@@ -11,11 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Ofer", role: "Designer & Media", desc: "Future design lead and handling team media presence.", img: "assets/extracted_image_p2_6.jpeg" },
         { name: "Alon", role: "Programmer & Scouter", desc: "Writing code, scouting matches, and working in the pit.", img: "assets/extracted_image_p2_7.jpeg" },
         { name: "Nevo", role: "Mechanical & Scouter", desc: "Building the robot and scouting competition matches.", img: "assets/extracted_image_p2_10.jpeg" },
-        { name: "Golan", role: "Future Captain", desc: "Coach and strategy planning for upcoming seasons.", img: "assets/extracted_image_p2_11.jpeg" },
+        { name: "Golan", role: "Future Captain", desc: "Coach and strategy planning for upcoming seasons.", img: "assets/extracted_image_p2_11.jpeg" }
+    ];
+
+    const mentors = [
         { name: "Avi", role: "Mentor", desc: "Handling finances and mentoring FLL.", img: "assets/extracted_image_p2_14.jpeg" }
     ];
 
     const teamContainer = document.getElementById('team-container');
+    const mentorContainer = document.getElementById('mentor-container');
     
     // Inject team members into DOM
     if (teamContainer) {
@@ -39,6 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             teamContainer.insertAdjacentHTML('beforeend', cardHTML);
+        });
+    }
+
+    if (mentorContainer) {
+        mentors.forEach((member) => {
+            const cardHTML = `
+                <div class="team-card mentor-card reveal">
+                    <div class="team-card-image">
+                        <img src="${member.img}" alt="${member.name}">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>${member.name}</h3>
+                        <div class="role">${member.role}</div>
+                        <p>${member.desc}</p>
+                    </div>
+                </div>
+            `;
+            mentorContainer.insertAdjacentHTML('beforeend', cardHTML);
         });
     }
 
@@ -115,98 +137,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // --- 4. Hero Canvas Animation (Circuit/Particles) ---
-    const canvas = document.getElementById('hero-canvas');
-    if (canvas) {
-        const ctx = canvas.getContext('2d');
-        let width, height;
-        let particles = [];
-        
-        // Setup canvas sizing
-        const resize = () => {
-            width = window.innerWidth;
-            height = window.innerHeight;
-            canvas.width = width;
-            canvas.height = height;
-        };
-        
-        window.addEventListener('resize', resize);
-        resize();
-        
-        // Particle Class
-        class Particle {
-            constructor() {
-                this.x = Math.random() * width;
-                this.y = Math.random() * height;
-                this.vx = (Math.random() - 0.5) * 0.5;
-                this.vy = (Math.random() - 0.5) * 0.5;
-                this.size = Math.random() * 2 + 1;
-                this.color = Math.random() > 0.8 ? '#2DB34A' : 'rgba(27, 140, 46, 0.5)';
-            }
-            
-            update() {
-                this.x += this.vx;
-                this.y += this.vy;
-                
-                // Wrap around edges
-                if (this.x < 0) this.x = width;
-                if (this.x > width) this.x = 0;
-                if (this.y < 0) this.y = height;
-                if (this.y > height) this.y = 0;
-            }
-            
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = this.color;
-                ctx.fill();
-            }
-        }
-        
-        // Create particles
-        const particleCount = Math.min(Math.floor(window.innerWidth / 15), 100);
-        for (let i = 0; i < particleCount; i++) {
-            particles.push(new Particle());
-        }
-        
-        // Animation loop
-        const animate = () => {
-            ctx.clearRect(0, 0, width, height);
-            
-            // Draw lines between close particles (circuit effect)
-            for (let i = 0; i < particles.length; i++) {
-                particles[i].update();
-                particles[i].draw();
-                
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    
-                    if (dist < 120) {
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        
-                        // Draw angled circuit lines instead of straight lines
-                        if (Math.random() > 0.5) {
-                            ctx.lineTo(particles[i].x, particles[j].y);
-                        } else {
-                            ctx.lineTo(particles[j].x, particles[i].y);
-                        }
-                        
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        
-                        // Opacity based on distance
-                        const opacity = 1 - (dist / 120);
-                        ctx.strokeStyle = `rgba(27, 140, 46, ${opacity * 0.3})`;
-                        ctx.lineWidth = 1;
-                        ctx.stroke();
-                    }
-                }
-            }
-            requestAnimationFrame(animate);
-        };
-        
-        animate();
-    }
 });
