@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlanTech #17106 | FTC Robotics Team</title>
+  <meta name="description" content="Portfolio of FTC Team 17106 PlanTech from Meir Shfeya Youth Village, Israel.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="PlanTech Logo">
+        <div>
+          <span>PlanTech</span>
+          <div class="team-number">#17106</div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#seasons">Seasons</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="dot"></span> FTC Team 17106
+      </div>
+      <h1>We are <span class="gradient-text">PlanTech</span></h1>
+      <p class="hero-subtitle">
+        A passionate FIRST Tech Challenge robotics team from Meir Shfeya Youth Village, Israel. 
+        Innovating, learning, and competing together since 2019.
+      </p>
+      
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="number">7</div>
+          <div class="label">Seasons</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">10</div>
+          <div class="label">Members</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">#9</div>
+          <div class="label">in Israel</div>
+        </div>
+      </div>
+      
+      <a href="#about" class="hero-cta">
+        Discover Our Journey <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Story</span>
+        <h2>Engineering the Future</h2>
+        <p>Learn about who we are, where we come from, and what drives us forward in the world of robotics.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h3>Youth Village Meir Shfeya</h3>
+          <p>
+            PlanTech #17106 was founded in 2019 at the Meir Shfeya Youth Village in Israel. 
+            We are a dedicated group of students in grades 9-12 who share a passion for STEM, 
+            engineering, and problem-solving.
+          </p>
+          <p>
+            Over the years, we've grown not just as engineers, but as a family. We design, 
+            build, and program our robots together, overcoming challenges and celebrating our 
+            victories. We are proud to represent our school and our country, especially as we 
+            head to the Michiana Premier Event in the USA!
+          </p>
+        </div>
+        <div class="about-highlights reveal-right">
+          <div class="highlight-card stagger-1">
+            <i class="fas fa-microchip icon" style="color: var(--green-light)"></i>
+            <h4>Innovation</h4>
+            <p>Custom 3D printed parts, CNC machining, and advanced automation.</p>
+          </div>
+          <div class="highlight-card stagger-2">
+            <i class="fas fa-users icon" style="color: var(--green-light)"></i>
+            <h4>Teamwork</h4>
+            <p>Divided into specialized subteams with dedicated leaders.</p>
+          </div>
+          <div class="highlight-card stagger-3">
+            <i class="fas fa-hands-helping icon" style="color: var(--green-light)"></i>
+            <h4>Outreach</h4>
+            <p>Mentoring FLL teams and spreading STEM awareness.</p>
+          </div>
+          <div class="highlight-card stagger-4">
+            <i class="fas fa-globe icon" style="color: var(--green-light)"></i>
+            <h4>Global</h4>
+            <p>Ranked #802 worldwide in OPR out of thousands of teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasons Timeline Section -->
+  <section id="seasons" class="seasons">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our History</span>
+        <h2>7 Seasons of Excellence</h2>
+        <p>Tracing our evolution from a rookie team to national competitors.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Current Season -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card current">
+            <div class="timeline-year">2025 - 2026</div>
+            <h3>DECODE</h3>
+            <span class="badge">Current Season</span>
+            <p>Continuing our journey of innovation and excellence.</p>
+          </div>
+        </div>
+
+        <!-- 24-25 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2024 - 2025</div>
+            <h3>Into The Deep</h3>
+            <span class="badge">Breakthrough Year</span>
+            <p>A phenomenal season featuring dual flywheels, precision odometry, and advanced automation using PedroPathing. Heading to the Michiana Premier Event in the USA!</p>
+          </div>
+        </div>
+
+        <!-- 23-24 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2023 - 2024</div>
+            <h3>CENTERSTAGE</h3>
+            <p>Developing robust mechanisms and improving our design processes.</p>
+          </div>
+        </div>
+
+        <!-- 22-23 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2022 - 2023</div>
+            <h3>POWERPLAY</h3>
+            <p>Mastering precision control and reliable autonomous routines.</p>
+          </div>
+        </div>
+
+        <!-- 21-22 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2021 - 2022</div>
+            <h3>FREIGHT FRENZY</h3>
+            <p>Expanding our CAD capabilities and custom manufacturing.</p>
+          </div>
+        </div>
+
+        <!-- 20-21 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2020 - 2021</div>
+            <h3>Ultimate Goal</h3>
+            <p>Overcoming challenges and building strong team foundations.</p>
+          </div>
+        </div>
+
+        <!-- Rookie Season -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2019 - 2020</div>
+            <h3>SKYSTONE</h3>
+            <span class="badge">Rookie Season</span>
+            <p>The beginning of PlanTech #17106. Laying the groundwork for future success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Hall of Fame</span>
+        <h2>Notable Achievements</h2>
+        <p>Highlights from our most successful competitions.</p>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal-scale stagger-1">
+          <i class="fas fa-trophy achievement-icon" style="color: #FFD700"></i>
+          <h3>Qualifier 1 Winner</h3>
+          <div class="season-tag">2024 - 2025</div>
+          <p>Secured the top spot and overall victory in the first regional qualifier tournament.</p>
+        </div>
+        
+        <div class="achievement-card reveal-scale stagger-2">
+          <i class="fas fa-star achievement-icon" style="color: #C0C0C0"></i>
+          <h3>Playoff Alliance #6 Captain</h3>
+          <div class="season-tag">2024 - 2025 (Qualifier 2)</div>
+          <p>Drafted and led our own alliance through the intense playoff elimination bracket.</p>
+        </div>
+        
+        <div class="achievement-card reveal-scale stagger-3">
+          <i class="fas fa-lightbulb achievement-icon" style="color: #FF9800"></i>
+          <h3>Think Award #2 Winner</h3>
+          <div class="season-tag">2024 - 2025 (Qualifier 2)</div>
+          <p>Recognized for our detailed engineering portfolio and clear engineering design process.</p>
+        </div>
+        
+        <div class="achievement-card reveal-scale stagger-4">
+          <i class="fas fa-medal achievement-icon" style="color: #4CAF50"></i>
+          <h3>2nd Place - Codex League</h3>
+          <div class="season-tag">2024 - 2025</div>
+          <p>Consistent high-level performance throughout all the league meets.</p>
+        </div>
+        
+        <div class="achievement-card reveal-scale stagger-5">
+          <i class="fas fa-flag achievement-icon" style="color: #2196F3"></i>
+          <h3>9th Place in Israel</h3>
+          <div class="season-tag">2024 - 2025</div>
+          <p>Ranked among the top 10 best FTC robotics teams in the entire country.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">By The Numbers</span>
+        <h2>Performance Metrics</h2>
+        <p>Data imported directly from FTCScout for the 2024-2025 season.</p>
+      </div>
+
+      <div class="stats-grid reveal">
+        <div class="stat-card stagger-1">
+          <div class="stat-value">87.16</div>
+          <div class="stat-label">Best OPR</div>
+          <div class="stat-detail">Offensive Power Rating</div>
+        </div>
+        <div class="stat-card stagger-2">
+          <div class="stat-value">#802</div>
+          <div class="stat-label">World Rank</div>
+          <div class="stat-detail">Top 10% globally</div>
+        </div>
+        <div class="stat-card stagger-3">
+          <div class="stat-value">90.3%</div>
+          <div class="stat-label">Percentile</div>
+          <div class="stat-detail">Overall performance</div>
+        </div>
+        <div class="stat-card stagger-4">
+          <div class="stat-value">62.89</div>
+          <div class="stat-label">Teleop OPR</div>
+          <div class="stat-detail">Driver-controlled phase</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The People</span>
+        <h2>Meet The Team</h2>
+        <p>The dedicated students who make the magic happen.</p>
+      </div>
+
+      <div class="team-grid" id="team-container">
+        <!-- Team members injected via JS to keep HTML clean -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="PlanTech Logo">
+            <span>PlanTech</span>
+          </div>
+          <p>We are a passionate FIRST Tech Challenge robotics team from Meir Shfeya Youth Village, Israel. Innovating since 2019.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#seasons">Seasons</a>
+          <a href="#achievements">Achievements</a>
+        </div>
+        
+        <div class="footer-col">
+          <h4>External</h4>
+          <a href="https://ftcscout.org/teams/17106" target="_blank" rel="noopener">FTCScout Profile</a>
+          <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener">About FTC</a>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">
+            Meir Shfeya Youth Village<br>
+            Zichron Yaacov Area<br>
+            Israel
+          </p>
+          <div class="social-links" style="margin-top: 1rem;">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 PlanTech #17106. All rights reserved.</p>
+        <p>Built with ❤️ by Team PlanTech</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
