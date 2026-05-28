@@ -10,12 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Agam", role: "Programming Lead", desc: "Shirt design and pit team member, writing core logic.", img: "assets/extracted_image_p2_4.jpeg" },
         { name: "Ofer", role: "Designer & Media", desc: "Future design lead and handling team media presence.", img: "assets/extracted_image_p2_6.jpeg" },
         { name: "Alon", role: "Programmer & Scouter", desc: "Writing code, scouting matches, and working in the pit.", img: "assets/extracted_image_p2_7.jpeg" },
-        { name: "Gil", role: "Programmer & Merch", desc: "Handling code, team merchandise, and logistics.", img: "assets/extracted_image_p2_8.jpeg" },
-        { name: "Dvir", role: "Programmer & Scout Lead", desc: "Coding, score counting, and leading scouting efforts.", img: "assets/extracted_image_p2_9.jpeg" },
         { name: "Nevo", role: "Mechanical & Scouter", desc: "Building the robot and scouting competition matches.", img: "assets/extracted_image_p2_10.jpeg" },
         { name: "Golan", role: "Future Captain", desc: "Coach and strategy planning for upcoming seasons.", img: "assets/extracted_image_p2_11.jpeg" },
-        { name: "Amit", role: "Mechanical Lead", desc: "Driver and management, building the physical robot.", img: "assets/extracted_image_p2_12.jpeg" },
-        { name: "Rotem", role: "Captain & Design Lead", desc: "Great guy guiding the team and leading the robot design.", img: "assets/extracted_image_p2_13.png" },
         { name: "Avi", role: "Mentor", desc: "Handling finances and mentoring FLL.", img: "assets/extracted_image_p2_14.jpeg" }
     ];
 
