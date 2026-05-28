@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const teamMembers = [
         { name: "Imri", role: "Programming Lead", desc: "Strategist, human player, and leading our code.", img: "assets/extracted_image_p2_3.jpeg" },
         { name: "Agam", role: "Programming Lead", desc: "Shirt design and pit team member, writing core logic.", img: "assets/extracted_image_p2_4.jpeg" },
-        { name: "Ofer", role: "Designer & Media", desc: "Future design lead and handling team media presence.", img: "assets/extracted_image_p2_6.jpeg" },
+        { name: "Ofer", role: "CAD Lead", desc: "Leading design and handling team media presence.", img: "assets/extracted_image_p2_6.jpeg" },
         { name: "Alon", role: "Programmer & Scouter", desc: "Writing code, scouting matches, and working in the pit.", img: "assets/extracted_image_p2_7.jpeg" },
-        { name: "Nevo", role: "Mechanical & Scouter", desc: "Building the robot and scouting competition matches.", img: "assets/extracted_image_p2_10.jpeg" },
-        { name: "Golan", role: "Future Captain", desc: "Coach and strategy planning for upcoming seasons.", img: "assets/extracted_image_p2_11.jpeg" }
+        { name: "Nevo", role: "Mechanics Lead", desc: "Leading the building process and scouts at competitions.", img: "assets/extracted_image_p2_10.jpeg" },
+        { name: "Golan", role: "Captain", desc: "Coach and strategy planning for upcoming seasons.", img: "assets/extracted_image_p2_11.jpeg" }
     ];
 
     const mentors = [
@@ -20,20 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const teamContainer = document.getElementById('team-container');
     const mentorContainer = document.getElementById('mentor-container');
-    
+
     // Inject team members into DOM
     if (teamContainer) {
         teamMembers.forEach((member, index) => {
             const initial = member.name.charAt(0);
             const delayClass = `stagger-${(index % 5) + 1}`;
-            
+
             const cardHTML = `
                 <div class="team-card reveal ${delayClass}">
                     <div class="team-card-image">
-                        ${member.img 
-                            ? `<img src="${member.img}" alt="${member.name}">` 
-                            : `<div class="placeholder-avatar">${initial}</div>`
-                        }
+                        ${member.img
+                    ? `<img src="${member.img}" alt="${member.name}">`
+                    : `<div class="placeholder-avatar">${initial}</div>`
+                }
                     </div>
                     <div class="team-card-info">
                         <h3>${member.name}</h3>
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Active link highlighting based on scroll position
     const sections = document.querySelectorAll('section');
-    
+
     window.addEventListener('scroll', () => {
         let current = '';
         const scrollY = window.scrollY;
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            
+
             if (scrollY >= (sectionTop - 200)) {
                 current = section.getAttribute('id');
             }
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 3. Scroll Reveal Animations ---
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-    
+
     const revealCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
